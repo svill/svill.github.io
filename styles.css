@@ -1,0 +1,515 @@
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    margin: unset;
+    font-family: -apple-system, "system-ui", "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    color: #2d3748;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 60px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+h3 {
+    font-size: 42px;
+    font-weight: unset;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+p {
+    line-height: 1.4em;
+}
+
+button {
+    height: 40px;
+    color: white;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 16px;
+    /* FF7327 */
+    /* EE7820 */
+    background-color: #EE7820;
+    border-width: 0;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+button:hover {
+    background: #E06A12;
+}
+
+button:active {
+    background: #CF5900;
+}
+
+input {
+    border-radius: 6px;
+    border-color: rgb(226, 232, 240);
+    border-style: solid;
+    border-width: 1px;
+    font-size: 16px;
+    height: 38px;
+    padding-top: unset;
+    padding-bottom: unset;
+    padding-left: 16px;
+    padding-right: 16px;
+    color: rgb(45, 55, 72);
+    line-height: 24px;
+}
+
+input::placeholder {
+    color: #a0afbf;
+}
+
+/* small */
+@media screen and (max-width: 800px) {
+    .banner {
+        flex-direction: column;
+    }
+
+    .feature {
+        flex-direction: column;
+    }
+
+    .pricing {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    .pricing>div {
+        flex-direction: column;
+    }
+
+    .double-feature {
+        flex-direction: column;
+    }
+
+    .double-feature>div:last-child {
+        margin-top: 100px;
+    }
+
+    .tripple-feature {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sections {
+        display: none !important;
+    }
+}
+
+/* large */
+@media screen and (min-width: 800px) {
+    .banner {
+        flex-direction: row;
+    }
+
+    .feature {
+        flex-direction: row;
+    }
+
+    .pricing {
+        padding-left: 60px !important;
+        padding-right: 60px !important;
+    }
+
+    .pricing>div {
+        flex-direction: row;
+    }
+
+    .double-feature {
+        flex-direction: row;
+    }
+
+    .tripple-feature {
+        flex-direction: row;
+    }
+
+    .sections {
+        display: flex !important;
+    }
+}
+
+.brand {
+    color: #EE7820;
+}
+
+.light {
+    background-color: #f6f9fc;
+}
+
+.dark {
+    background-color: #202124;
+    color: #F7FAFC;
+}
+
+.dark .brand {
+    color: #EE7820;
+}
+
+.dark p {
+    color: #F7FAFC;
+}
+
+.dark>.hero-image,
+.pricing,
+#question {
+    background: #f6f9fc;
+    -webkit-box-shadow: 5px 5px 21px 2px rgb(0 0 0 / 10%);
+    box-shadow: 5px 5px 21px 2px rgb(0 0 0 / 10%);
+    border-radius: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 4px;
+    padding-top: 18px;
+}
+
+.pricing {
+    background: white;
+    border: solid 1px #E2E8F0;
+    margin-top: 40px;
+    color: #2d3748;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center
+}
+
+.pricing>div {
+    display: flex;
+    gap: 40px;
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.price-rate>span:first-child {
+    vertical-align: super;
+    font-size: 2em;
+}
+
+.price-rate>span:last-child {
+    font-size: 1.8em;
+    vertical-align: super;
+}
+
+.price-rate-amount {
+    vertical-align: middle;
+    font-size: 6em;
+}
+
+.feature-list {
+    text-align: left;
+    list-style: none;
+}
+
+.feature-list>li {
+    list-style-image: url("assets/check.svg");
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.full-width {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.limit-width {
+    max-width: 1200px;
+    width: 100%;
+}
+
+.limit-width>* {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.banner {
+    margin-top: 80px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner>div {
+    max-width: 650px;
+}
+
+.section-title {
+    font-weight: 600;
+}
+
+.section-title a {
+    color: unset;
+    text-decoration: unset;
+}
+
+.header {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.section-title,
+.section-title>div {
+    display: flex;
+    gap: 40px;
+    align-items: center
+}
+
+.banner p {
+    font-size: 22px;
+}
+
+.hero {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-image {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+}
+
+.hero-image>img {
+    width: 100%;
+    max-width: 1000px;
+}
+
+
+.feature>img {
+    width: 100%;
+    max-width: 500px;
+}
+
+#img-email {
+    max-width: 130px;  
+}
+
+#img-dropdown {
+    max-width: 180px;  
+}
+
+#img-transaction-types {
+    max-width: 320px;  
+}
+
+#img-address-bar {
+    max-width: 350px;  
+}
+
+.hero p,
+.feature p,
+.double-feature p,
+.tripple-feature p,
+td {
+    font-size: 18px;
+}
+
+.feature {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.feature>div {
+    max-width: 650px;
+}
+
+.double-feature {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    justify-content: space-around;
+}
+
+.double-feature>div {
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.double-feature img {
+    margin-top: 20px;
+}
+
+.double-feature p {
+    margin-top: 30px;
+}
+
+.tripple-feature {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 60px;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.border-left {
+    border-width: 0px;
+    border-left-width: 4px;
+    border-color: #EE7820;
+    border-style: solid;
+    padding-left: 20px;
+    margin-left: 20px;
+}
+
+.border-right {
+    border-width: 0px;
+    border-right-width: 4px;
+    border-color: #EE7820;
+    border-style: solid;
+    padding-right: 20px;
+    margin-right: 20px;
+}
+
+.subscribe {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 40px;
+}
+
+.subscribe p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#subscribe-form {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#subscribe-form input {
+    max-width: 300px;
+    width: 100%;
+}
+
+#subscribe-form button {
+    width: 200px;
+}
+
+#question-form label {
+    font-size: 18px;
+}
+
+#question-form textarea {
+    width: 100%;
+    height: 76px;
+    margin-top: 10px;
+    margin-bottom: 30px;    
+    font-family: -apple-system, "system-ui", "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    border-radius: 6px;
+    border-color: rgb(226, 232, 240);
+    border-style: solid;
+    border-width: 1px;
+    font-size: 16px;
+    color: rgb(45, 55, 72);
+    line-height: 24px;
+}
+
+.large-icon {
+    font-size: 1.6em;
+}
+
+#subscribe-spinner,
+#subscribe-complete,
+#question-spinner,
+#question-complete,
+#question {
+    display: none;
+}
+
+table {
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#question {
+    padding: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background: white;
+}
+
+hr {
+    border-top: 1px solid #E2E8F0;
+    border-bottom: 0px solid #E2E8F0;
+    border-left: 0px solid #E2E8F0;
+    border-right: 0px solid #E2E8F0;
+}
+
+.footer {
+    font-size: 0.8em;
+    padding-left: 20px;
+}
+
+.footer a {
+    margin: 0px;
+    color: white;
+}
+
+.attributions {
+    font-size: 0.8em;
+    color: #A0AEC0;
+    margin: 0px;
+}
+
+.attributions a {
+    color: #A0AEC0;
+}
+
+.security-items {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    max-width: 550px !important;
+}
+
+.shield {
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 160px !important;
+}
+
+.security {
+    margin-top: 40px;
+}
